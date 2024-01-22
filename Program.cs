@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Kian Bangerter
+//Dice rolling code to simulate rolling two dice using two classes
+
+using Mission2;
 
 internal class Program
 {
@@ -30,18 +33,4 @@ internal class Program
     }
 }
 
-internal class DiceRoller
-{
-    private Random random = new Random();
 
-    public int[] RollDice(int rolls)
-    {
-        int[] results = new int[13];
-        for (int i = 0; i < rolls; i++)
-        {
-            int roll = random.Next(1, 7) + random.Next(1, 7);
-            results[roll]++;
-        }
-        return results;
-    }
-}
